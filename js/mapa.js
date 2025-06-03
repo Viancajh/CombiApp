@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }).addTo(map);
 
   try {
-    const res = await fetch("https://52.41.36.82/combis");
+    const res = await fetch("https://combiapi-3qvi.onrender.com/combis");
     const combis = await res.json();
 
     combis.forEach(combi => {
